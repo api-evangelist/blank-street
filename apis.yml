@@ -1,8 +1,14 @@
 aid: blank-street
 name: Blank Street
-description: 'Blank Street is a company surfaced as a portfolio company of general-catalyst, tiger-global
-  and added to the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: 'Blank Street is a consumer coffee and beverage retailer that began in 2020 as a single
+  5x10 coffee cart in Brooklyn and has grown into a global brand operating roughly 90+ locations across
+  the United States and the United Kingdom, serving seasonal specialty drinks such as matcha and espresso
+  beverages. The company emphasizes convenience through mobile ordering and a loyalty rewards program
+  via its consumer app, alongside merchandise and gifting. It is backed by General Catalyst and Tiger
+  Global and was added to the API Evangelist network as a portfolio company. Blank Street publishes a
+  consumer web and mobile experience (rewards, ordering, shop, locations, help center) but exposes no
+  public developer API, SDK, or specification surface at this time; this profile captures its public web
+  properties and domain-security posture.'
 url: https://raw.githubusercontent.com/api-evangelist/blank-street/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +17,29 @@ x-backed-by:
 - tiger-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://res.cloudinary.com/blank-street/image/upload/v1687957456/web/BlankStreet_Favicon_ihzdxu.png
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Consumer
+- Coffee
+- Retail
+- Food and Beverage
+- Loyalty
+- Mobile Ordering
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -26,3 +49,16 @@ maintainers:
 common:
 - type: Website
   url: https://www.blankstreet.com
+- type: PrivacyPolicy
+  url: https://www.blankstreet.com/en-US/privacy
+- type: TermsOfService
+  url: https://www.blankstreet.com/en-US/tos
+- type: Support
+  url: https://help.blankstreet.com/hc/en-us
+- type: DomainSecurity
+  url: security/blank-street-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
